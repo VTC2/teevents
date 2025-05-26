@@ -5,3 +5,12 @@ GroupsID = 0 - polska podstawa
 GroupsID = 1 - IGCSE (Matura Międzynarodowa)
 GroupsID = 3 - Nauczyciel
 
+Dodawanie eventu:
+
+INSERT INTO Events (name, startDate, endDate, registrationDate, priority, visibility, state)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+INSERT INTO EventContent (eventID, tittle, name, description)
+VALUES (?, ?, ?, ?);
+
+trzeba do tego w phtonie zrobic tak by automatycznie bral eventid tamtego i wklepywal tu.
