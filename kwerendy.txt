@@ -1,0 +1,1 @@
+select id,name from UsersTemp inner join UserGroup on userstemp.id = UserGroup.userID where GroupsID = 1
