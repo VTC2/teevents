@@ -1,1 +1,7 @@
 select id,name from UsersTemp inner join UserGroup on userstemp.id = UserGroup.userID where GroupsID = 1
+- sprawdzanie grupy uzytkownika, czy jest uczniem na polskiej podstawie, igcse bądź nauczycielem.
+Legenda = 
+GroupsID = 0 - polska podstawa
+GroupsID = 1 - IGCSE (Matura Międzynarodowa)
+GroupsID = 3 - Nauczyciel
+
