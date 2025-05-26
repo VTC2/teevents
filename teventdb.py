@@ -3,6 +3,7 @@
 #
 #  Funkcje przydatne do obsługi bazy danych Tevent
 import sqlite3
+from event import Event
 
 
 class TeventDB():
@@ -59,8 +60,10 @@ class TeventDB():
         # - sprawdzić, czy w userRoles istnieją powiązania, które nie występują w tabeli EventsRoles, jeśli tak - dodać je
     
     # Dodanie eventu do bazy
-    def AddEvent():
-        
+    def AddEvent(self, event: Event):
+        # TODO: ustawić wszystkie parametry eventu
+
+        #
 
     
 

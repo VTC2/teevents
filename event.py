@@ -31,13 +31,15 @@ class Event():
     ## Konstruktor przeciążony 
     # 
     #  Ustawia wartości wszystkich zmiennych jako parametry wywołania oraz dodaje event do bazy danych
-    def __init__(self, name, registrationDate, startDate, endDate, rating, priority, visibility, state, likeAmount):
+    def __init__(self, name, registrationDate, startDate, endDate, rating, priority, visibility, state, likeAmount, links:list, images:list, tags:list, userRoles:list, title, description):
         self.name = name
         self.registrationDate = registrationDate
         self.startDate = startDate
         self.endDate = endDate
         self.rating = rating
-        #TODO: dokończyć
+        #TODO: 
+        # - dokończyć
+        # - dodanie eventu do bazy danych
         
         pass
     
@@ -83,7 +85,7 @@ class Event():
     ## Metoda ModifyEvent
     #
     # metoda modyfikuje parametry eventu
-    def ModifyEvent(self, name, registrationDate, startDate, endDate, rating, priority, visibility, state, likeAmount):
+    def ModifyEvent(self, name, registrationDate, startDate, endDate, rating, priority, visibility, state, likeAmount, links:list, images:list, tags:list, userRoles:list, title, description):
         #TODO:
         # - ustwia podane parametry eventu 
         pass
@@ -97,8 +99,8 @@ class Event():
         # 1. aktualizacja/dodanie/usunięcie wierszy tabeli links - wywołanie metody UpdateLinks z modułu teventdb
         # 2. aktualizacja/dodanie/usunięcie wierszy tabeli images - wywołanie metody UpdateImages z modułu teventdb
         # 3. aktualizacja tagów - Wywołanie metody UpdateTags() z modułu teventdb
-        # 4. aktualizacja ról -  Wywołanie metody UpdateuserRoles() z modułu teventdb
-        # 5. 
+        # 4. aktualizacja ról -  Wywołanie metody UpdateUserRoles() z modułu teventdb
+        # 5. aktualizacja pozostałych parametrów eventu w bazie danych - metoda UpdateEvent modułu teventdb
         pass
 
     ## Metoda AddEvent
@@ -107,8 +109,9 @@ class Event():
     #  @return int - kod błędu
     def AddEvent():
         # TODO: 
-        # 1. dodanie nowego rekordu do tabeli Events
-        # 2. aktualizacja powiązanych tabel
+        # 1. dodanie nowego rekordu do tabeli Events - funkcja AddEvent modułu teventdb
+        # 2. pobranie ID dodanego eventu
+        # 3. aktualizacja powiązanych tabel
         # 
         pass
 
