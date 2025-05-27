@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Te Vizja International Schools</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="main.html"><img src="img/tevizja.png" alt="Te Vizja Logo" /></a>
+    </div>
+    <div class="actions">
+      <button>➕<br><small>New event</small></button>
+      <button>👁️<br><small>Hide event</small></button>
+    </div>
+    <div class="language">
+      <button><img src="img/pl.png" alt="PL" class="lang"/></button>
+      <button><img src="img/en.png" alt="EN" class="lang"/></button>
+    </div>
+    <div class="user">
+      <button>👤<br><small>Profile</small></button>
+      <button>↩️<br><small>Log out</small></button>
+    </div>
+    <div class="menu">
+      ☰
+    </div>
+  </header>
+
+  <main>
+    <form action="">
+            <label for="name">Nazwa: </label><br>
+            <input type="text" id="name" name="name" placeholder="Nazwa" required><br>
+            <label for="datar">Data rozpoczęcia: </label><br>
+            <input type="date" id="datar" name="datar" required><br>
+            <label for="dataz">Data zakończenia:</label><br>
+            <input type="date" id="dataz" name="dataz" required><br>
+            <label for="status">Rodzaj wydarzenia:</label>
+            <select id="status" name="status">
+                <option>Obowiązkowe</option>
+                <option>Nie obowiązkowe</option>
+            </select>
+            <br>
+            <label for="text">Treść: </label><br>
+            <textarea name="text"></textarea>
+
+            <br><br>
+            <input type="submit" id="submit" value="Submit">
+          </form> 
+  </main>
+
+  <footer>
+    <div class="contact-title">Contact us</div>
+    <div class="campus">
+      <strong>NEW Campus<br>Warsaw Mokotów</strong>
+      <p>st. 1 Sierpnia 8A, 02-134 Warsaw<br>
+      mokotow@tevizja.pl<br>io_mokotow@tevizja.pl</p>
+    </div>
+    <div class="campus">
+      <strong>Campus VIZJA PARK<br>Warsaw Centrum</strong>
+      <p>st. Okopowa 59, 01-043 Warsaw<br>
+      centrum@tevizja.pl<br>io_centrum@tevizja.pl</p>
+    </div>
+    <div class="campus">
+      <strong>Campus<br>Warsaw Wawer</strong>
+      <p>st. Patriotów 148, 04-839 Warsaw<br>
+      centrum@tevizja.pl<br>io_centrum@tevizja.pl</p>
+    </div>
+  </footer>
+</body>
+</html>
